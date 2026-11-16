@@ -1,0 +1,507 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Cafe Dream — премиальное кафе. Ароматный кофе, изысканные блюда и уютная атмосфера.">
+
+    <title>Cafe Dream | Премиальное кафе</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header" id="header">
+    <a href="#home" class="logo">
+        <span class="logo-icon">✦</span>
+        CAFE DREAM
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+        aria-label="Открыть меню" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="navigation" id="navigation">
+        <a href="#home">Главная</a>
+        <a href="#about">О нас</a>
+        <a href="#menu">Меню</a>
+        <a href="#reservation">Бронирование</a>
+        <a href="#contacts">Контакты</a>
+    </nav>
+
+    <a href="#reservation" class="header-button">
+        Забронировать
+    </a>
+</header>
+
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+    <div class="hero-background"></div>
+
+    <div class="hero-content reveal">
+
+        <span class="eyebrow">
+            ВКУС. АТМОСФЕРА. ВДОХНОВЕНИЕ.
+        </span>
+
+        <h1>
+            Искусство вкуса<br>
+            <span>в каждой детали</span>
+        </h1>
+
+        <p>
+            Откройте для себя мир изысканного кофе,
+            авторских десертов и незабываемой атмосферы.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#menu" class="button button-gold">
+                Наше меню
+            </a>
+
+            <a href="#reservation" class="button button-outline">
+                Забронировать столик
+            </a>
+        </div>
+
+        <div class="hero-bottom">
+            <span>БИШКЕК · КЫРГЫЗСТАН</span>
+            <span>КАЖДЫЙ ДЕНЬ · 09:00–23:00</span>
+        </div>
+
+    </div>
+
+    <div class="hero-number">01 / 04</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about section" id="about">
+
+    <div class="about-image reveal">
+        <img
+            src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=1000"
+            alt="Интерьер уютного кафе"
+            loading="lazy"
+        >
+
+        <div class="image-label">
+            CAFE DREAM
+            <span>Место, куда хочется возвращаться</span>
+        </div>
+    </div>
+
+    <div class="about-content reveal">
+
+        <span class="eyebrow">НАША ФИЛОСОФИЯ</span>
+
+        <h2>
+            Больше, чем<br>
+            просто <span>кофе</span>
+        </h2>
+
+        <p>
+            Cafe Dream — пространство, где встречаются
+            вкус, комфорт и эстетика.
+        </p>
+
+        <p>
+            Мы создаём особенную атмосферу для встреч
+            с друзьями, романтических вечеров и спокойного
+            отдыха за чашкой любимого кофе.
+        </p>
+
+        <a href="#menu" class="text-link">
+            ОТКРЫТЬ МЕНЮ <span>→</span>
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- MENU -->
+
+<section class="menu-section section" id="menu">
+
+    <div class="section-heading reveal">
+
+        <span class="eyebrow">НАШИ СПЕЦИАЛИТЕТЫ</span>
+
+        <h2>Меню <span>Cafe Dream</span></h2>
+
+        <p>
+            Выбирайте любимые вкусы и наслаждайтесь моментом.
+        </p>
+
+    </div>
+
+    <div class="menu-filters reveal">
+
+        <button class="filter active" data-filter="all">
+            Всё меню
+        </button>
+
+        <button class="filter" data-filter="coffee">
+            Кофе
+        </button>
+
+        <button class="filter" data-filter="dessert">
+            Десерты
+        </button>
+
+        <button class="filter" data-filter="food">
+            Блюда
+        </button>
+
+    </div>
+
+
+    <div class="menu-grid">
+
+        <article class="menu-card reveal" data-category="coffee">
+
+            <div class="menu-image">
+                <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?w=700"
+                    alt="Капучино" loading="lazy">
+                <span class="menu-label">ПОПУЛЯРНОЕ</span>
+            </div>
+
+            <div class="menu-info">
+                <div class="menu-title">
+                    <h3>Капучино</h3>
+                    <span>180 сом</span>
+                </div>
+                <p>Эспрессо, молоко и нежная пенка.</p>
+            </div>
+
+        </article>
+
+
+        <article class="menu-card reveal" data-category="coffee">
+
+            <div class="menu-image">
+                <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=700"
+                    alt="Латте" loading="lazy">
+            </div>
+
+            <div class="menu-info">
+                <div class="menu-title">
+                    <h3>Латте</h3>
+                    <span>200 сом</span>
+                </div>
+                <p>Мягкий кофе с насыщенным молочным вкусом.</p>
+            </div>
+
+        </article>
+
+
+        <article class="menu-card reveal" data-category="dessert">
+
+            <div class="menu-image">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=700"
+                    alt="Шоколадный торт" loading="lazy">
+            </div>
+
+            <div class="menu-info">
+                <div class="menu-title">
+                    <h3>Шоколадный торт</h3>
+                    <span>280 сом</span>
+                </div>
+                <p>Нежный десерт с насыщенным шоколадом.</p>
+            </div>
+
+        </article>
+
+
+        <article class="menu-card reveal" data-category="dessert">
+
+            <div class="menu-image">
+                <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=700"
+                    alt="Десерт с ягодами" loading="lazy">
+            </div>
+
+            <div class="menu-info">
+                <div class="menu-title">
+                    <h3>Ягодный десерт</h3>
+                    <span>250 сом</span>
+                </div>
+                <p>Лёгкий десерт со свежими ягодами.</p>
+            </div>
+
+        </article>
+
+
+        <article class="menu-card reveal" data-category="food">
+
+            <div class="menu-image">
+                <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=700"
+                    alt="Авторское блюдо" loading="lazy">
+            </div>
+
+            <div class="menu-info">
+                <div class="menu-title">
+                    <h3>Авторское блюдо</h3>
+                    <span>450 сом</span>
+                </div>
+                <p>Изысканное блюдо от нашего шеф-повара.</p>
+            </div>
+
+        </article>
+
+
+        <article class="menu-card reveal" data-category="food">
+
+            <div class="menu-image">
+                <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=700"
+                    alt="Свежий салат" loading="lazy">
+            </div>
+
+            <div class="menu-info">
+                <div class="menu-title">
+                    <h3>Свежий салат</h3>
+                    <span>350 сом</span>
+                </div>
+                <p>Свежие ингредиенты и фирменная заправка.</p>
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- SPECIAL -->
+
+<section class="special section reveal">
+
+    <div class="special-content">
+        <span class="eyebrow">ОСОБЕННОЕ ПРЕДЛОЖЕНИЕ</span>
+
+        <h2>
+            Каждый момент<br>
+            заслуживает <span>вкуса</span>
+        </h2>
+
+        <p>
+            Откройте для себя новые сочетания
+            и любимые блюда Cafe Dream.
+        </p>
+
+        <a href="#reservation" class="button button-gold">
+            Забронировать столик
+        </a>
+    </div>
+
+</section>
+
+
+<!-- RESERVATION -->
+
+<section class="reservation section" id="reservation">
+
+    <div class="section-heading reveal">
+
+        <span class="eyebrow">ВАШ ОСОБЕННЫЙ МОМЕНТ</span>
+
+        <h2>Забронируйте <span>столик</span></h2>
+
+        <p>
+            Заполните форму, и мы подготовим
+            для вас уютное место.
+        </p>
+
+    </div>
+
+
+    <form class="booking-form reveal" id="bookingForm">
+
+        <div class="form-grid">
+
+            <div class="form-group">
+                <label for="name">Ваше имя</label>
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Введите имя"
+                    required
+                    maxlength="60"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Номер телефона</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="+996 998 091 804"
+                    required
+                    maxlength="20"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="date">Дата посещения</label>
+                <input
+                    type="date"
+                    id="date"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="time">Время</label>
+                <select id="time" required>
+                    <option value="">Выберите время</option>
+                    <option>09:00</option>
+                    <option>10:00</option>
+                    <option>11:00</option>
+                    <option>12:00</option>
+                    <option>13:00</option>
+                    <option>14:00</option>
+                    <option>15:00</option>
+                    <option>16:00</option>
+                    <option>17:00</option>
+                    <option>18:00</option>
+                    <option>19:00</option>
+                    <option>20:00</option>
+                    <option>21:00</option>
+                    <option>22:00</option>
+                </select>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="guests">Количество гостей</label>
+                <select id="guests" required>
+                    <option value="1">1 человек</option>
+                    <option value="2" selected>2 человека</option>
+                    <option value="3">3 человека</option>
+                    <option value="4">4 человека</option>
+                    <option value="5">5 человек</option>
+                    <option value="6">6 человек</option>
+                    <option value="7">7 человек</option>
+                    <option value="8">8 человек</option>
+                </select>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="message">Пожелания</label>
+                <textarea
+                    id="message"
+                    placeholder="Дополнительная информация..."
+                    rows="4"
+                    maxlength="500"
+                ></textarea>
+            </div>
+
+        </div>
+
+        <button type="submit" class="button button-gold submit-button">
+            Отправить заявку через WhatsApp
+        </button>
+
+        <p class="form-note">
+            После нажатия откроется WhatsApp
+            с подготовленной заявкой.
+        </p>
+
+        <p id="formStatus" class="form-status" role="status"></p>
+
+    </form>
+
+</section>
+
+
+<!-- CONTACTS -->
+
+<section class="contacts section" id="contacts">
+
+    <div class="contacts-content reveal">
+
+        <span class="eyebrow">МЫ ЖДЁМ ВАС</span>
+
+        <h2>До встречи в <span>Cafe Dream</span></h2>
+
+        <div class="contact-list">
+
+            <div>
+                <span>АДРЕС</span>
+                <p>Бишкек, Кыргызстан</p>
+            </div>
+
+            <div>
+                <span>ВРЕМЯ РАБОТЫ</span>
+                <p>Ежедневно · 09:00–23:00</p>
+            </div>
+
+            <div>
+                <span>ТЕЛЕФОН</span>
+                <p>+996 700 000 000</p>
+            </div>
+
+        </div>
+
+        <a href="#" id="contactWhatsapp" class="button button-gold">
+            Написать в WhatsApp
+        </a>
+
+    </div>
+
+    <div class="contacts-image reveal">
+        <img
+            src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1000"
+            alt="Атмосфера кафе"
+            loading="lazy"
+        >
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <a href="#home" class="logo">
+        <span class="logo-icon">✦</span>
+        CAFE DREAM
+    </a>
+
+    <p>Создано с любовью к вкусу и деталям.</p>
+
+    <span>© <span id="year"></span> Cafe Dream. Все права защищены.</span>
+
+</footer>
+
+
+<a href="#" class="floating-whatsapp" id="floatingWhatsapp"
+   aria-label="Написать в WhatsApp">
+    WA
+</a>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
